@@ -1,0 +1,6 @@
+{
+    "name": "@conductor/ui",
+    "dependencies": {
+        "@conductor/types": "workspace:*"
+    }
+}

@@ -1,0 +1,26 @@
+{
+    "name": "@conductor/api",
+    "targets": {
+        "build": {
+            "command": "go build -o bin/api ./cmd/http",
+            "options": { "cwd": "apps/api" }
+        },
+        "test": {
+            "command": "go test ./...",
+            "options": { "cwd": "apps/api" }
+        },
+        "lint": {
+            "command": "golangci-lint run ./...",
+            "options": { "cwd": "apps/api" }
+        },
+        "format": {
+            "command": "gofmt -l -w .",
+            "options": { "cwd": "apps/api" }
+        },
+        "serve": {
+            "command": "air -c .air.toml",
+            "options": { "cwd": "apps/api" },
+            "continuous": true
+        }
+    }
+}

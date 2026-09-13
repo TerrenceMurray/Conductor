@@ -1,0 +1,18 @@
+{
+  "name": "Conductor",
+  "version": "0.0.1",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.1",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "eslint": "^10.10.0",
+    "nx": "23.2.1",
+    "typescript-eslint": "^8.70.0"
+  },
+  "nx": {}
+}

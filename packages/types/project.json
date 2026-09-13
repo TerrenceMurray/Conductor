@@ -1,0 +1,9 @@
+{
+  "name": "@conductor/types",
+  "targets": {
+    "lint": {
+      "command": "eslint . --no-error-on-unmatched-pattern",
+      "options": { "cwd": "packages/types" }
+    }
+  }
+}

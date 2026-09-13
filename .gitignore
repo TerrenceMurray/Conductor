@@ -1,0 +1,11 @@
+# Folders
+node_modules/
+dist/
+bin/
+tmp/
+
+# Files
+.nx
+.env
+.env.local
+build-errors.log
