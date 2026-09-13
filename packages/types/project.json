@@ -1,0 +1,14 @@
+{
+  "name": "@conductor/types",
+  "targets": {
+    "lint": {
+      "command": "eslint . --no-error-on-unmatched-pattern",
+      "options": { "cwd": "packages/types" }
+    },
+    "generate": {
+      "command": "openapi-typescript ../../apps/api/docs/swagger.yaml -o src/schema.d.ts",
+      "options": { "cwd": "packages/types" },
+      "dependsOn": [{ "projects": ["@conductor/api"], "target": "openapi" }]
+    }
+  }
+}

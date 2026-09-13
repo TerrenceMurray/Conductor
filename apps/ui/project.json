@@ -1,0 +1,35 @@
+{
+  "name": "@conductor/ui",
+  "targets": {
+    "dev": {
+      "executor": "nx:run-script",
+      "options": { "script": "dev" },
+      "continuous": true
+    },
+    "build": {
+      "executor": "nx:run-script",
+      "options": { "script": "build" }
+    },
+    "preview": {
+      "executor": "nx:run-script",
+      "options": { "script": "preview" },
+      "continuous": true
+    },
+    "generate-routes": {
+      "executor": "nx:run-script",
+      "options": { "script": "generate-routes" }
+    },
+    "lint": {
+      "command": "eslint . --no-error-on-unmatched-pattern",
+      "options": { "cwd": "apps/ui" }
+    },
+    "format": {
+      "executor": "nx:run-script",
+      "options": { "script": "format" }
+    },
+    "check": {
+      "executor": "nx:run-script",
+      "options": { "script": "check" }
+    }
+  }
+}

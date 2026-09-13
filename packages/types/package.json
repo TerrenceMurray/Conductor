@@ -1,0 +1,4 @@
+{
+	"name": "@conductor/types",
+	"types": "./src/schema.d.ts"
+}

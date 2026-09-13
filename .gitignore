@@ -1,0 +1,16 @@
+# Folders
+node_modules/
+dist/
+bin/
+tmp/
+
+# Files
+.nx
+.env
+.env.local
+build-errors.log
+*.tsbuildinfo
+
+# Generated from apps/api's Go annotations - regenerate via `nx run api:openapi` / `nx run types:generate`
+apps/api/docs/
+packages/types/src/schema.d.ts

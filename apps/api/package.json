@@ -1,0 +1,8 @@
+{
+    "name": "@conductor/api",
+    "exports": {
+        ".": {
+            "default": "./bin/api"
+        }
+    }
+}
