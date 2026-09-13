@@ -1,3 +1,4 @@
 {
-	"name": "@conductor/types"
+	"name": "@conductor/types",
+	"types": "./src/schema.d.ts"
 }
